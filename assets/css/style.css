@@ -96,6 +96,7 @@ button {
     right: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav li:hover .subnav{
@@ -154,18 +155,31 @@ button {
     font-size: 13px;
 }
 
+#header .menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
 }
 
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
 }
+
+
 #header .search-btn:hover {
-    background-color: #f44336;
+    background-color: ##f44336;
+    cursor: pointer;
+}
+
+#header .menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-btn:hover {
+    background-color: #ccc;
     cursor: pointer;
 }
 
@@ -200,7 +214,8 @@ button {
 
 #Content .content-section {
     width: 800px;
-    padding: 64px 0 128px;
+    max-width: 100%;
+    padding: 64px 16px 128px;
     margin-right: auto;
     margin-left: auto;
 }
