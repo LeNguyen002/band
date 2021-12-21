@@ -99,7 +99,7 @@ button {
     overflow: hidden;
 }
 
-#nav li:hover .subnav{
+#nav li:hover .subnav {
     display: block;
 }
 
@@ -140,11 +140,9 @@ button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
      min-width: 160px; 
 }
-
 #nav {
     display: inline-block;
 }
-
 #nav .subnav a {
     color: black;
     line-height: 38px;
@@ -168,9 +166,15 @@ button {
     line-height: 46px;
 }
 
+#header .menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
 #header .search-btn:hover {
-    background-color: ##f44336;
+    background-color: #f44336;
     cursor: pointer;
 }
 

@@ -250,9 +250,10 @@
             }
         }
 
-        var menuItems = document.querySelectorAll('#nav li a[href*='#']');
-        for (var i = 0;i < menuItems;i++) {
-            var menuItem = menuItems;
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0;i < menuItems.length;i++) {
+            var menuItem = menuItems[i];
+
             menuItem.onclick = function() {
                 header.style.height = null ;
             }
