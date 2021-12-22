@@ -256,7 +256,13 @@
             var menuItem = menuItems[i];
 
             menuItem.onclick = function() {
-                header.style.height = null ;
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                }   else {
+                    header.style.height = null ;
+                }
+                
             }
         }
     </script>
