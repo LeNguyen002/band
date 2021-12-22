@@ -30,6 +30,11 @@ button {
     margin-top: 16px;
     cursor: pointer;
     border: none;
+    -webkit-appearance: none;
+}
+
+.contact-form .form-control {
+    font-size: 16px;
 }
 
 .btn:hover {
@@ -209,6 +214,7 @@ button {
     font-size: 15px;
     margin-top: 25px;
     font-weight: bolder;
+    text-shadow: 0 0 1px #000;
 }
 
 #Content {
@@ -342,6 +348,15 @@ button {
 .contact-info {
     font-size: 18px;
     line-height: 1.5;   
+}
+
+.contact-info a {
+    color: #0000EE;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*="ti-"] {
